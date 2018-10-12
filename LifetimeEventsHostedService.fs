@@ -6,7 +6,7 @@ open System.Threading.Tasks
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.Logging
 
-type LifetimeEventsHostedServices(logger : ILogger<LifetimeEventsHostedServices>, appLifetime : IApplicationLifetime) =
+type internal LifetimeEventsHostedServices(logger : ILogger<LifetimeEventsHostedServices>, appLifetime : IApplicationLifetime) =
     
     let _logger = logger
     let _appLifetime = appLifetime

@@ -6,7 +6,7 @@ open System.Threading.Tasks
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.Logging
 
-type TimedHostedService(logger : ILogger<TimedHostedService>) =
+type internal TimedHostedService(logger : ILogger<TimedHostedService>) =
     
     let _logger = logger
     let mutable _timer:Timer = null
